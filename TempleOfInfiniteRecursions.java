@@ -6,14 +6,14 @@ public class TempleOfInfiniteRecursions {
         indy.startAdventure();
     }
 
-    // Chapter 1: The Array Abyss
+   
     public static int linearSearch(int[] arr, int target) {
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == target) {
                 return i;
             }
         }
-        return -1;  // Element not found
+        return -1;  
     }
 
     public static int binarySearch(int[] arr, int target) {
@@ -29,7 +29,7 @@ public class TempleOfInfiniteRecursions {
                 right = mid - 1;
             }
         }
-        return -1;  // Element not found
+        return -1;  
     }
 }
 
@@ -42,7 +42,7 @@ class IndianaJones {
     }
 }
 
-// Generic Stack class
+
 class Stack<T> {
     private List<T> data;
 
@@ -73,7 +73,7 @@ class Stack<T> {
     }
 }
 
-// Generic LinkedList class
+
 class LinkedList<T> {
     class Node<T> {
         T data;
@@ -129,10 +129,10 @@ class LinkedList<T> {
     }
 }
 
-// Using Stack<Character> in isBalanced() method
+
 class BalancedParentheses {
     public static boolean isBalanced(String s) {
-        Stack<Character> stack = new Stack<>();  // Correct use of generics
+        Stack<Character> stack = new Stack<>();  
         for (char c : s.toCharArray()) {
             if (c == '(' || c == '{' || c == '[') {
                 stack.push(c);
